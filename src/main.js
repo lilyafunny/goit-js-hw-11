@@ -39,8 +39,6 @@ async function handlSearch(event) {
     fetchData(foto.value)
         .then(data => {
 
-            console.log("data", data);
-
             if (data.hits.length == 0) {
                 iziToast.error({
                     message: 'Sorry, there are no images matching your search query. Please try again!',
